@@ -1,0 +1,18 @@
+---
+const { text = "Aceptar", isRounded = false} = Astro.props;
+---
+<button class:list={
+    ["bg-blue-400", 
+    "text-white",
+    "px-2",
+    "py-1",
+    "leading-3",
+    "pt-1",
+    "pb-2",
+    "hover:bg-blue-600",
+    "transition-colors",
+    {rounded: isRounded}
+]}
+>
+    {text}
+</button>
